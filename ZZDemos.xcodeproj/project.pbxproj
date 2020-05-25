@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B2D910BC247BA21B00820F21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910BB247BA21B00820F21 /* AppDelegate.m */; };
 		B2D910C2247BA21B00820F21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910C1247BA21B00820F21 /* ViewController.m */; };
-		B2D910C5247BA21B00820F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D910C3247BA21B00820F21 /* Main.storyboard */; };
 		B2D910C7247BA22100820F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D910C6247BA22100820F21 /* Assets.xcassets */; };
 		B2D910CA247BA22100820F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D910C8247BA22100820F21 /* LaunchScreen.storyboard */; };
 		B2D910CD247BA22100820F21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910CC247BA22100820F21 /* main.m */; };
@@ -29,6 +28,14 @@
 		B2D91111247BA24800820F21 /* ZZH5ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910FD247BA24800820F21 /* ZZH5ProgressView.m */; };
 		B2D91112247BA24800820F21 /* ZZSafer.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910FF247BA24800820F21 /* ZZSafer.m */; };
 		B2D91113247BA24800820F21 /* ZZTouchIDAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D91102247BA24800820F21 /* ZZTouchIDAuthenticator.m */; };
+		B2D9113F247BB50B00820F21 /* UIView+ZZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D91127247BB50A00820F21 /* UIView+ZZFrame.m */; };
+		B2D91145247BB50B00820F21 /* UIView+ZZCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D91139247BB50B00820F21 /* UIView+ZZCreate.m */; };
+		B2D91149247BB53B00820F21 /* UIAlertController+ZZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D91148247BB53B00820F21 /* UIAlertController+ZZExt.m */; };
+		B2D9114C247BB56D00820F21 /* NSAttributedString+ZZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D9114B247BB56D00820F21 /* NSAttributedString+ZZExt.m */; };
+		B2D9114F247BB59C00820F21 /* UIColor+ZZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D9114E247BB59C00820F21 /* UIColor+ZZExt.m */; };
+		B2D91152247BB65100820F21 /* UITextField+ZZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D91151247BB65100820F21 /* UITextField+ZZExt.m */; };
+		B2D91155247BB69F00820F21 /* UIView+ZZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D91154247BB69F00820F21 /* UIView+ZZExt.m */; };
+		B2D91158247BB6C900820F21 /* UIViewController+ZZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D91157247BB6C900820F21 /* UIViewController+ZZExt.m */; };
 		F7FE15E9C00E2908FB2E00BF /* libPods-ZZDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C36F78A67EA3F65EF9227A7 /* libPods-ZZDemos.a */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +48,6 @@
 		B2D910BB247BA21B00820F21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B2D910C0247BA21B00820F21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B2D910C1247BA21B00820F21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B2D910C4247BA21B00820F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2D910C6247BA22100820F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2D910C9247BA22100820F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2D910CB247BA22100820F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +85,22 @@
 		B2D91102247BA24800820F21 /* ZZTouchIDAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZTouchIDAuthenticator.m; sourceTree = "<group>"; };
 		B2D91103247BA24800820F21 /* ZZTouchIDAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZTouchIDAuthenticator.h; sourceTree = "<group>"; };
 		B2D91114247BA27E00820F21 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B2D91127247BB50A00820F21 /* UIView+ZZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZZFrame.m"; sourceTree = "<group>"; };
+		B2D91128247BB50A00820F21 /* UIView+ZZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZZFrame.h"; sourceTree = "<group>"; };
+		B2D91139247BB50B00820F21 /* UIView+ZZCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZZCreate.m"; sourceTree = "<group>"; };
+		B2D9113A247BB50B00820F21 /* UIView+ZZCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZZCreate.h"; sourceTree = "<group>"; };
+		B2D91147247BB53B00820F21 /* UIAlertController+ZZExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+ZZExt.h"; sourceTree = "<group>"; };
+		B2D91148247BB53B00820F21 /* UIAlertController+ZZExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+ZZExt.m"; sourceTree = "<group>"; };
+		B2D9114A247BB56D00820F21 /* NSAttributedString+ZZExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+ZZExt.h"; sourceTree = "<group>"; };
+		B2D9114B247BB56D00820F21 /* NSAttributedString+ZZExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+ZZExt.m"; sourceTree = "<group>"; };
+		B2D9114D247BB59C00820F21 /* UIColor+ZZExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZZExt.h"; sourceTree = "<group>"; };
+		B2D9114E247BB59C00820F21 /* UIColor+ZZExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZZExt.m"; sourceTree = "<group>"; };
+		B2D91150247BB65100820F21 /* UITextField+ZZExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZZExt.h"; sourceTree = "<group>"; };
+		B2D91151247BB65100820F21 /* UITextField+ZZExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZZExt.m"; sourceTree = "<group>"; };
+		B2D91153247BB69F00820F21 /* UIView+ZZExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZZExt.h"; sourceTree = "<group>"; };
+		B2D91154247BB69F00820F21 /* UIView+ZZExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZZExt.m"; sourceTree = "<group>"; };
+		B2D91156247BB6C900820F21 /* UIViewController+ZZExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZZExt.h"; sourceTree = "<group>"; };
+		B2D91157247BB6C900820F21 /* UIViewController+ZZExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZZExt.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,17 +136,16 @@
 		B2D910B9247BA21B00820F21 /* ZZDemos */ = {
 			isa = PBXGroup;
 			children = (
-				B2D910DC247BA24800820F21 /* components */,
 				B2D910D3247BA24800820F21 /* demos */,
+				B2D910DC247BA24800820F21 /* components */,
 				B2D910BA247BA21B00820F21 /* AppDelegate.h */,
 				B2D910BB247BA21B00820F21 /* AppDelegate.m */,
 				B2D910C0247BA21B00820F21 /* ViewController.h */,
-				B2D91114247BA27E00820F21 /* PrefixHeader.pch */,
 				B2D910C1247BA21B00820F21 /* ViewController.m */,
-				B2D910C3247BA21B00820F21 /* Main.storyboard */,
 				B2D910C6247BA22100820F21 /* Assets.xcassets */,
 				B2D910C8247BA22100820F21 /* LaunchScreen.storyboard */,
 				B2D910CB247BA22100820F21 /* Info.plist */,
+				B2D91114247BA27E00820F21 /* PrefixHeader.pch */,
 				B2D910CC247BA22100820F21 /* main.m */,
 			);
 			path = ZZDemos;
@@ -185,6 +206,14 @@
 			isa = PBXGroup;
 			children = (
 				B2D910DE247BA24800820F21 /* ZZExtensions.h */,
+				B2D91123247BB50A00820F21 /* UIAlertController */,
+				B2D9112C247BB50B00820F21 /* NSAttributedString */,
+				B2D91135247BB50B00820F21 /* UIColor */,
+				B2D91138247BB50B00820F21 /* Create */,
+				B2D91126247BB50A00820F21 /* Frame */,
+				B2D91132247BB50B00820F21 /* UITextField */,
+				B2D91129247BB50A00820F21 /* UIView */,
+				B2D9113B247BB50B00820F21 /* UIViewController */,
 				B2D910DF247BA24800820F21 /* NSDate */,
 			);
 			path = "[分类]ZZExtensions";
@@ -296,6 +325,78 @@
 			path = "[指纹]ZZTouchIDAuthenticator";
 			sourceTree = "<group>";
 		};
+		B2D91123247BB50A00820F21 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				B2D91147247BB53B00820F21 /* UIAlertController+ZZExt.h */,
+				B2D91148247BB53B00820F21 /* UIAlertController+ZZExt.m */,
+			);
+			path = UIAlertController;
+			sourceTree = "<group>";
+		};
+		B2D91126247BB50A00820F21 /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				B2D91128247BB50A00820F21 /* UIView+ZZFrame.h */,
+				B2D91127247BB50A00820F21 /* UIView+ZZFrame.m */,
+			);
+			path = Frame;
+			sourceTree = "<group>";
+		};
+		B2D91129247BB50A00820F21 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				B2D91153247BB69F00820F21 /* UIView+ZZExt.h */,
+				B2D91154247BB69F00820F21 /* UIView+ZZExt.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		B2D9112C247BB50B00820F21 /* NSAttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				B2D9114A247BB56D00820F21 /* NSAttributedString+ZZExt.h */,
+				B2D9114B247BB56D00820F21 /* NSAttributedString+ZZExt.m */,
+			);
+			path = NSAttributedString;
+			sourceTree = "<group>";
+		};
+		B2D91132247BB50B00820F21 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				B2D91150247BB65100820F21 /* UITextField+ZZExt.h */,
+				B2D91151247BB65100820F21 /* UITextField+ZZExt.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		B2D91135247BB50B00820F21 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				B2D9114D247BB59C00820F21 /* UIColor+ZZExt.h */,
+				B2D9114E247BB59C00820F21 /* UIColor+ZZExt.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		B2D91138247BB50B00820F21 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				B2D9113A247BB50B00820F21 /* UIView+ZZCreate.h */,
+				B2D91139247BB50B00820F21 /* UIView+ZZCreate.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		B2D9113B247BB50B00820F21 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B2D91156247BB6C900820F21 /* UIViewController+ZZExt.h */,
+				B2D91157247BB6C900820F21 /* UIViewController+ZZExt.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		BE7D92953F6030ED310E6223 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,7 +411,6 @@
 				3E03CD6189A9C05BE9B81A8A /* Pods-ZZDemos.debug.xcconfig */,
 				100F87D4BA26A8F61B0415FC /* Pods-ZZDemos.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -377,7 +477,6 @@
 				B2D9110A247BA24800820F21 /* ZZSharedResource.bundle in Resources */,
 				B2D910C7247BA22100820F21 /* Assets.xcassets in Resources */,
 				B2D91109247BA24800820F21 /* ZZShareReadme.md in Resources */,
-				B2D910C5247BA21B00820F21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,13 +515,21 @@
 				B2D910C2247BA21B00820F21 /* ViewController.m in Sources */,
 				B2D9110F247BA24800820F21 /* ZZH5ContainerController.m in Sources */,
 				B2D910BC247BA21B00820F21 /* AppDelegate.m in Sources */,
+				B2D91155247BB69F00820F21 /* UIView+ZZExt.m in Sources */,
 				B2D91108247BA24800820F21 /* ZZSharedManager.m in Sources */,
+				B2D91149247BB53B00820F21 /* UIAlertController+ZZExt.m in Sources */,
 				B2D91106247BA24800820F21 /* TSSharedVC.m in Sources */,
+				B2D9114C247BB56D00820F21 /* NSAttributedString+ZZExt.m in Sources */,
 				B2D910CD247BA22100820F21 /* main.m in Sources */,
+				B2D9113F247BB50B00820F21 /* UIView+ZZFrame.m in Sources */,
+				B2D91152247BB65100820F21 /* UITextField+ZZExt.m in Sources */,
 				B2D91111247BA24800820F21 /* ZZH5ProgressView.m in Sources */,
 				B2D9110D247BA24800820F21 /* ZZRootViewController.m in Sources */,
+				B2D91158247BB6C900820F21 /* UIViewController+ZZExt.m in Sources */,
 				B2D91110247BA24800820F21 /* ZZH5BaseScriptHandler.m in Sources */,
 				B2D91112247BA24800820F21 /* ZZSafer.m in Sources */,
+				B2D9114F247BB59C00820F21 /* UIColor+ZZExt.m in Sources */,
+				B2D91145247BB50B00820F21 /* UIView+ZZCreate.m in Sources */,
 				B2D91105247BA24800820F21 /* TSBannerVC.m in Sources */,
 				B2D91107247BA24800820F21 /* NSDate+ZZExt.m in Sources */,
 				B2D9110C247BA24800820F21 /* ZZBannerView.m in Sources */,
@@ -435,14 +542,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B2D910C3247BA21B00820F21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2D910C4247BA21B00820F21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2D910C8247BA22100820F21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -580,7 +679,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.z.ZZDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -600,7 +699,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.z.ZZDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
