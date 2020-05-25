@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2D910BC247BA21B00820F21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910BB247BA21B00820F21 /* AppDelegate.m */; };
+		B2D910C2247BA21B00820F21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910C1247BA21B00820F21 /* ViewController.m */; };
+		B2D910C5247BA21B00820F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D910C3247BA21B00820F21 /* Main.storyboard */; };
+		B2D910C7247BA22100820F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D910C6247BA22100820F21 /* Assets.xcassets */; };
+		B2D910CA247BA22100820F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D910C8247BA22100820F21 /* LaunchScreen.storyboard */; };
+		B2D910CD247BA22100820F21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910CC247BA22100820F21 /* main.m */; };
+		B2D91104247BA24800820F21 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = B2D910D5247BA24800820F21 /* test.html */; };
+		B2D91105247BA24800820F21 /* TSBannerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910D7247BA24800820F21 /* TSBannerVC.m */; };
+		B2D91106247BA24800820F21 /* TSSharedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910DA247BA24800820F21 /* TSSharedVC.m */; };
+		B2D91107247BA24800820F21 /* NSDate+ZZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910E1247BA24800820F21 /* NSDate+ZZExt.m */; };
+		B2D91108247BA24800820F21 /* ZZSharedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910E3247BA24800820F21 /* ZZSharedManager.m */; };
+		B2D91109247BA24800820F21 /* ZZShareReadme.md in Resources */ = {isa = PBXBuildFile; fileRef = B2D910E4247BA24800820F21 /* ZZShareReadme.md */; };
+		B2D9110A247BA24800820F21 /* ZZSharedResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2D910E5247BA24800820F21 /* ZZSharedResource.bundle */; };
+		B2D9110B247BA24800820F21 /* ZZSharedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910E9247BA24800820F21 /* ZZSharedView.m */; };
+		B2D9110C247BA24800820F21 /* ZZBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910ED247BA24800820F21 /* ZZBannerView.m */; };
+		B2D9110D247BA24800820F21 /* ZZRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910F0247BA24800820F21 /* ZZRootViewController.m */; };
+		B2D9110E247BA24800820F21 /* ZZBugly.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910F3247BA24800820F21 /* ZZBugly.m */; };
+		B2D9110F247BA24800820F21 /* ZZH5ContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910F5247BA24800820F21 /* ZZH5ContainerController.m */; };
+		B2D91110247BA24800820F21 /* ZZH5BaseScriptHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910F8247BA24800820F21 /* ZZH5BaseScriptHandler.m */; };
+		B2D91111247BA24800820F21 /* ZZH5ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910FD247BA24800820F21 /* ZZH5ProgressView.m */; };
+		B2D91112247BA24800820F21 /* ZZSafer.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910FF247BA24800820F21 /* ZZSafer.m */; };
+		B2D91113247BA24800820F21 /* ZZTouchIDAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D91102247BA24800820F21 /* ZZTouchIDAuthenticator.m */; };
+		F7FE15E9C00E2908FB2E00BF /* libPods-ZZDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C36F78A67EA3F65EF9227A7 /* libPods-ZZDemos.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100F87D4BA26A8F61B0415FC /* Pods-ZZDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZDemos.release.xcconfig"; path = "Target Support Files/Pods-ZZDemos/Pods-ZZDemos.release.xcconfig"; sourceTree = "<group>"; };
+		3E03CD6189A9C05BE9B81A8A /* Pods-ZZDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZDemos.debug.xcconfig"; path = "Target Support Files/Pods-ZZDemos/Pods-ZZDemos.debug.xcconfig"; sourceTree = "<group>"; };
+		9C36F78A67EA3F65EF9227A7 /* libPods-ZZDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D910B7247BA21B00820F21 /* ZZDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D910BA247BA21B00820F21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B2D910BB247BA21B00820F21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B2D910C0247BA21B00820F21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B2D910C1247BA21B00820F21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B2D910C4247BA21B00820F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2D910C6247BA22100820F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2D910C9247BA22100820F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2D910CB247BA22100820F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D910CC247BA22100820F21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2D910D5247BA24800820F21 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		B2D910D7247BA24800820F21 /* TSBannerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBannerVC.m; sourceTree = "<group>"; };
+		B2D910D8247BA24800820F21 /* TSBannerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBannerVC.h; sourceTree = "<group>"; };
+		B2D910DA247BA24800820F21 /* TSSharedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSharedVC.m; sourceTree = "<group>"; };
+		B2D910DB247BA24800820F21 /* TSSharedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSharedVC.h; sourceTree = "<group>"; };
+		B2D910DE247BA24800820F21 /* ZZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZExtensions.h; sourceTree = "<group>"; };
+		B2D910E0247BA24800820F21 /* NSDate+ZZExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZZExt.h"; sourceTree = "<group>"; };
+		B2D910E1247BA24800820F21 /* NSDate+ZZExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZZExt.m"; sourceTree = "<group>"; };
+		B2D910E3247BA24800820F21 /* ZZSharedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSharedManager.m; sourceTree = "<group>"; };
+		B2D910E4247BA24800820F21 /* ZZShareReadme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ZZShareReadme.md; sourceTree = "<group>"; };
+		B2D910E5247BA24800820F21 /* ZZSharedResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZZSharedResource.bundle; sourceTree = "<group>"; };
+		B2D910E6247BA24800820F21 /* ZZSharedConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSharedConfig.h; sourceTree = "<group>"; };
+		B2D910E7247BA24800820F21 /* ZZSharedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSharedManager.h; sourceTree = "<group>"; };
+		B2D910E9247BA24800820F21 /* ZZSharedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSharedView.m; sourceTree = "<group>"; };
+		B2D910EA247BA24800820F21 /* ZZSharedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSharedView.h; sourceTree = "<group>"; };
+		B2D910EC247BA24800820F21 /* ZZBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZBannerView.h; sourceTree = "<group>"; };
+		B2D910ED247BA24800820F21 /* ZZBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZBannerView.m; sourceTree = "<group>"; };
+		B2D910EF247BA24800820F21 /* ZZRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZRootViewController.h; sourceTree = "<group>"; };
+		B2D910F0247BA24800820F21 /* ZZRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZRootViewController.m; sourceTree = "<group>"; };
+		B2D910F2247BA24800820F21 /* ZZBugly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZBugly.h; sourceTree = "<group>"; };
+		B2D910F3247BA24800820F21 /* ZZBugly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZBugly.m; sourceTree = "<group>"; };
+		B2D910F5247BA24800820F21 /* ZZH5ContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZH5ContainerController.m; sourceTree = "<group>"; };
+		B2D910F7247BA24800820F21 /* ZZH5BaseScriptHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZH5BaseScriptHandler.h; sourceTree = "<group>"; };
+		B2D910F8247BA24800820F21 /* ZZH5BaseScriptHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZH5BaseScriptHandler.m; sourceTree = "<group>"; };
+		B2D910F9247BA24800820F21 /* ZZH5ContainerDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZH5ContainerDefine.h; sourceTree = "<group>"; };
+		B2D910FA247BA24800820F21 /* ZZH5ContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZH5ContainerController.h; sourceTree = "<group>"; };
+		B2D910FC247BA24800820F21 /* ZZH5ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZH5ProgressView.h; sourceTree = "<group>"; };
+		B2D910FD247BA24800820F21 /* ZZH5ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZH5ProgressView.m; sourceTree = "<group>"; };
+		B2D910FF247BA24800820F21 /* ZZSafer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSafer.m; sourceTree = "<group>"; };
+		B2D91100247BA24800820F21 /* ZZSafer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSafer.h; sourceTree = "<group>"; };
+		B2D91102247BA24800820F21 /* ZZTouchIDAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZTouchIDAuthenticator.m; sourceTree = "<group>"; };
+		B2D91103247BA24800820F21 /* ZZTouchIDAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZTouchIDAuthenticator.h; sourceTree = "<group>"; };
+		B2D91114247BA27E00820F21 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2D910B4247BA21B00820F21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7FE15E9C00E2908FB2E00BF /* libPods-ZZDemos.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2D910AE247BA21B00820F21 = {
+			isa = PBXGroup;
+			children = (
+				B2D910B9247BA21B00820F21 /* ZZDemos */,
+				B2D910B8247BA21B00820F21 /* Products */,
+				F1F5B1FB7D9721A2B77E8DEA /* Pods */,
+				BE7D92953F6030ED310E6223 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2D910B8247BA21B00820F21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910B7247BA21B00820F21 /* ZZDemos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2D910B9247BA21B00820F21 /* ZZDemos */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910DC247BA24800820F21 /* components */,
+				B2D910D3247BA24800820F21 /* demos */,
+				B2D910BA247BA21B00820F21 /* AppDelegate.h */,
+				B2D910BB247BA21B00820F21 /* AppDelegate.m */,
+				B2D910C0247BA21B00820F21 /* ViewController.h */,
+				B2D91114247BA27E00820F21 /* PrefixHeader.pch */,
+				B2D910C1247BA21B00820F21 /* ViewController.m */,
+				B2D910C3247BA21B00820F21 /* Main.storyboard */,
+				B2D910C6247BA22100820F21 /* Assets.xcassets */,
+				B2D910C8247BA22100820F21 /* LaunchScreen.storyboard */,
+				B2D910CB247BA22100820F21 /* Info.plist */,
+				B2D910CC247BA22100820F21 /* main.m */,
+			);
+			path = ZZDemos;
+			sourceTree = "<group>";
+		};
+		B2D910D3247BA24800820F21 /* demos */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910D4247BA24800820F21 /* 网络 */,
+				B2D910D6247BA24800820F21 /* 轮播图 */,
+				B2D910D9247BA24800820F21 /* 分享 */,
+			);
+			path = demos;
+			sourceTree = "<group>";
+		};
+		B2D910D4247BA24800820F21 /* 网络 */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910D5247BA24800820F21 /* test.html */,
+			);
+			path = "网络";
+			sourceTree = "<group>";
+		};
+		B2D910D6247BA24800820F21 /* 轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910D7247BA24800820F21 /* TSBannerVC.m */,
+				B2D910D8247BA24800820F21 /* TSBannerVC.h */,
+			);
+			path = "轮播图";
+			sourceTree = "<group>";
+		};
+		B2D910D9247BA24800820F21 /* 分享 */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910DA247BA24800820F21 /* TSSharedVC.m */,
+				B2D910DB247BA24800820F21 /* TSSharedVC.h */,
+			);
+			path = "分享";
+			sourceTree = "<group>";
+		};
+		B2D910DC247BA24800820F21 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910DD247BA24800820F21 /* [分类]ZZExtensions */,
+				B2D910E2247BA24800820F21 /* [分享]ZZShared */,
+				B2D910EB247BA24800820F21 /* [轮播图]ZZBannerView */,
+				B2D910EE247BA24800820F21 /* [基类]Bases */,
+				B2D910F1247BA24800820F21 /* [崩溃]ZZBugly */,
+				B2D910F4247BA24800820F21 /* [网络]WebContent */,
+				B2D910FE247BA24800820F21 /* [启动安全]ZZSafer */,
+				B2D91101247BA24800820F21 /* [指纹]ZZTouchIDAuthenticator */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		B2D910DD247BA24800820F21 /* [分类]ZZExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910DE247BA24800820F21 /* ZZExtensions.h */,
+				B2D910DF247BA24800820F21 /* NSDate */,
+			);
+			path = "[分类]ZZExtensions";
+			sourceTree = "<group>";
+		};
+		B2D910DF247BA24800820F21 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910E0247BA24800820F21 /* NSDate+ZZExt.h */,
+				B2D910E1247BA24800820F21 /* NSDate+ZZExt.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		B2D910E2247BA24800820F21 /* [分享]ZZShared */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910E3247BA24800820F21 /* ZZSharedManager.m */,
+				B2D910E4247BA24800820F21 /* ZZShareReadme.md */,
+				B2D910E5247BA24800820F21 /* ZZSharedResource.bundle */,
+				B2D910E6247BA24800820F21 /* ZZSharedConfig.h */,
+				B2D910E7247BA24800820F21 /* ZZSharedManager.h */,
+				B2D910E8247BA24800820F21 /* views */,
+			);
+			path = "[分享]ZZShared";
+			sourceTree = "<group>";
+		};
+		B2D910E8247BA24800820F21 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910E9247BA24800820F21 /* ZZSharedView.m */,
+				B2D910EA247BA24800820F21 /* ZZSharedView.h */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B2D910EB247BA24800820F21 /* [轮播图]ZZBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910EC247BA24800820F21 /* ZZBannerView.h */,
+				B2D910ED247BA24800820F21 /* ZZBannerView.m */,
+			);
+			path = "[轮播图]ZZBannerView";
+			sourceTree = "<group>";
+		};
+		B2D910EE247BA24800820F21 /* [基类]Bases */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910EF247BA24800820F21 /* ZZRootViewController.h */,
+				B2D910F0247BA24800820F21 /* ZZRootViewController.m */,
+			);
+			path = "[基类]Bases";
+			sourceTree = "<group>";
+		};
+		B2D910F1247BA24800820F21 /* [崩溃]ZZBugly */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910F2247BA24800820F21 /* ZZBugly.h */,
+				B2D910F3247BA24800820F21 /* ZZBugly.m */,
+			);
+			path = "[崩溃]ZZBugly";
+			sourceTree = "<group>";
+		};
+		B2D910F4247BA24800820F21 /* [网络]WebContent */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910F5247BA24800820F21 /* ZZH5ContainerController.m */,
+				B2D910F6247BA24800820F21 /* ScriptHandler */,
+				B2D910F9247BA24800820F21 /* ZZH5ContainerDefine.h */,
+				B2D910FA247BA24800820F21 /* ZZH5ContainerController.h */,
+				B2D910FB247BA24800820F21 /* Views */,
+			);
+			path = "[网络]WebContent";
+			sourceTree = "<group>";
+		};
+		B2D910F6247BA24800820F21 /* ScriptHandler */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910F7247BA24800820F21 /* ZZH5BaseScriptHandler.h */,
+				B2D910F8247BA24800820F21 /* ZZH5BaseScriptHandler.m */,
+			);
+			path = ScriptHandler;
+			sourceTree = "<group>";
+		};
+		B2D910FB247BA24800820F21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910FC247BA24800820F21 /* ZZH5ProgressView.h */,
+				B2D910FD247BA24800820F21 /* ZZH5ProgressView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2D910FE247BA24800820F21 /* [启动安全]ZZSafer */ = {
+			isa = PBXGroup;
+			children = (
+				B2D910FF247BA24800820F21 /* ZZSafer.m */,
+				B2D91100247BA24800820F21 /* ZZSafer.h */,
+			);
+			path = "[启动安全]ZZSafer";
+			sourceTree = "<group>";
+		};
+		B2D91101247BA24800820F21 /* [指纹]ZZTouchIDAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				B2D91102247BA24800820F21 /* ZZTouchIDAuthenticator.m */,
+				B2D91103247BA24800820F21 /* ZZTouchIDAuthenticator.h */,
+			);
+			path = "[指纹]ZZTouchIDAuthenticator";
+			sourceTree = "<group>";
+		};
+		BE7D92953F6030ED310E6223 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C36F78A67EA3F65EF9227A7 /* libPods-ZZDemos.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1F5B1FB7D9721A2B77E8DEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E03CD6189A9C05BE9B81A8A /* Pods-ZZDemos.debug.xcconfig */,
+				100F87D4BA26A8F61B0415FC /* Pods-ZZDemos.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2D910B6247BA21B00820F21 /* ZZDemos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D910D0247BA22100820F21 /* Build configuration list for PBXNativeTarget "ZZDemos" */;
+			buildPhases = (
+				88C844759F0352AB1AE33366 /* [CP] Check Pods Manifest.lock */,
+				B2D910B3247BA21B00820F21 /* Sources */,
+				B2D910B4247BA21B00820F21 /* Frameworks */,
+				B2D910B5247BA21B00820F21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZZDemos;
+			productName = ZZDemos;
+			productReference = B2D910B7247BA21B00820F21 /* ZZDemos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2D910AF247BA21B00820F21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Z.;
+				TargetAttributes = {
+					B2D910B6247BA21B00820F21 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B2D910B2247BA21B00820F21 /* Build configuration list for PBXProject "ZZDemos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2D910AE247BA21B00820F21;
+			productRefGroup = B2D910B8247BA21B00820F21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2D910B6247BA21B00820F21 /* ZZDemos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2D910B5247BA21B00820F21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D91104247BA24800820F21 /* test.html in Resources */,
+				B2D910CA247BA22100820F21 /* LaunchScreen.storyboard in Resources */,
+				B2D9110A247BA24800820F21 /* ZZSharedResource.bundle in Resources */,
+				B2D910C7247BA22100820F21 /* Assets.xcassets in Resources */,
+				B2D91109247BA24800820F21 /* ZZShareReadme.md in Resources */,
+				B2D910C5247BA21B00820F21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88C844759F0352AB1AE33366 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZZDemos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2D910B3247BA21B00820F21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D910C2247BA21B00820F21 /* ViewController.m in Sources */,
+				B2D9110F247BA24800820F21 /* ZZH5ContainerController.m in Sources */,
+				B2D910BC247BA21B00820F21 /* AppDelegate.m in Sources */,
+				B2D91108247BA24800820F21 /* ZZSharedManager.m in Sources */,
+				B2D91106247BA24800820F21 /* TSSharedVC.m in Sources */,
+				B2D910CD247BA22100820F21 /* main.m in Sources */,
+				B2D91111247BA24800820F21 /* ZZH5ProgressView.m in Sources */,
+				B2D9110D247BA24800820F21 /* ZZRootViewController.m in Sources */,
+				B2D91110247BA24800820F21 /* ZZH5BaseScriptHandler.m in Sources */,
+				B2D91112247BA24800820F21 /* ZZSafer.m in Sources */,
+				B2D91105247BA24800820F21 /* TSBannerVC.m in Sources */,
+				B2D91107247BA24800820F21 /* NSDate+ZZExt.m in Sources */,
+				B2D9110C247BA24800820F21 /* ZZBannerView.m in Sources */,
+				B2D91113247BA24800820F21 /* ZZTouchIDAuthenticator.m in Sources */,
+				B2D9110B247BA24800820F21 /* ZZSharedView.m in Sources */,
+				B2D9110E247BA24800820F21 /* ZZBugly.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2D910C3247BA21B00820F21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2D910C4247BA21B00820F21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2D910C8247BA22100820F21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2D910C9247BA22100820F21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2D910CE247BA22100820F21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B2D910CF247BA22100820F21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2D910D1247BA22100820F21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E03CD6189A9C05BE9B81A8A /* Pods-ZZDemos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QHT3H6GC4B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZDemos/PrefixHeader.pch";
+				INFOPLIST_FILE = ZZDemos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.z.ZZDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2D910D2247BA22100820F21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 100F87D4BA26A8F61B0415FC /* Pods-ZZDemos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QHT3H6GC4B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZDemos/PrefixHeader.pch";
+				INFOPLIST_FILE = ZZDemos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.z.ZZDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2D910B2247BA21B00820F21 /* Build configuration list for PBXProject "ZZDemos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D910CE247BA22100820F21 /* Debug */,
+				B2D910CF247BA22100820F21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D910D0247BA22100820F21 /* Build configuration list for PBXNativeTarget "ZZDemos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D910D1247BA22100820F21 /* Debug */,
+				B2D910D2247BA22100820F21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2D910AF247BA21B00820F21 /* Project object */;
+}
