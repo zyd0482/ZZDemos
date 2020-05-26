@@ -43,6 +43,7 @@
 		100F87D4BA26A8F61B0415FC /* Pods-ZZDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZDemos.release.xcconfig"; path = "Target Support Files/Pods-ZZDemos/Pods-ZZDemos.release.xcconfig"; sourceTree = "<group>"; };
 		3E03CD6189A9C05BE9B81A8A /* Pods-ZZDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZDemos.debug.xcconfig"; path = "Target Support Files/Pods-ZZDemos/Pods-ZZDemos.debug.xcconfig"; sourceTree = "<group>"; };
 		9C36F78A67EA3F65EF9227A7 /* libPods-ZZDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2264E36247CCA7800EDE558 /* ZZSaferDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZSaferDefine.h; sourceTree = "<group>"; };
 		B2D910B7247BA21B00820F21 /* ZZDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D910BA247BA21B00820F21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2D910BB247BA21B00820F21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -231,12 +232,12 @@
 		B2D910E2247BA24800820F21 /* [分享]ZZShared */ = {
 			isa = PBXGroup;
 			children = (
+				B2D910E8247BA24800820F21 /* views */,
+				B2D910E6247BA24800820F21 /* ZZSharedConfig.h */,
+				B2D910E7247BA24800820F21 /* ZZSharedManager.h */,
 				B2D910E3247BA24800820F21 /* ZZSharedManager.m */,
 				B2D910E4247BA24800820F21 /* ZZShareReadme.md */,
 				B2D910E5247BA24800820F21 /* ZZSharedResource.bundle */,
-				B2D910E6247BA24800820F21 /* ZZSharedConfig.h */,
-				B2D910E7247BA24800820F21 /* ZZSharedManager.h */,
-				B2D910E8247BA24800820F21 /* views */,
 			);
 			path = "[分享]ZZShared";
 			sourceTree = "<group>";
@@ -244,8 +245,8 @@
 		B2D910E8247BA24800820F21 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				B2D910E9247BA24800820F21 /* ZZSharedView.m */,
 				B2D910EA247BA24800820F21 /* ZZSharedView.h */,
+				B2D910E9247BA24800820F21 /* ZZSharedView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -280,11 +281,11 @@
 		B2D910F4247BA24800820F21 /* [网络]WebContent */ = {
 			isa = PBXGroup;
 			children = (
-				B2D910F5247BA24800820F21 /* ZZH5ContainerController.m */,
+				B2D910FB247BA24800820F21 /* Views */,
 				B2D910F6247BA24800820F21 /* ScriptHandler */,
 				B2D910F9247BA24800820F21 /* ZZH5ContainerDefine.h */,
+				B2D910F5247BA24800820F21 /* ZZH5ContainerController.m */,
 				B2D910FA247BA24800820F21 /* ZZH5ContainerController.h */,
-				B2D910FB247BA24800820F21 /* Views */,
 			);
 			path = "[网络]WebContent";
 			sourceTree = "<group>";
@@ -310,8 +311,9 @@
 		B2D910FE247BA24800820F21 /* [启动安全]ZZSafer */ = {
 			isa = PBXGroup;
 			children = (
-				B2D910FF247BA24800820F21 /* ZZSafer.m */,
+				B2264E36247CCA7800EDE558 /* ZZSaferDefine.h */,
 				B2D91100247BA24800820F21 /* ZZSafer.h */,
+				B2D910FF247BA24800820F21 /* ZZSafer.m */,
 			);
 			path = "[启动安全]ZZSafer";
 			sourceTree = "<group>";
@@ -673,6 +675,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZDemos/PrefixHeader.pch";
 				INFOPLIST_FILE = ZZDemos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -693,6 +696,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZDemos/PrefixHeader.pch";
 				INFOPLIST_FILE = ZZDemos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

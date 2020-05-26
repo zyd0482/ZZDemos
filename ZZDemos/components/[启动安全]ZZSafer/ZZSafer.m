@@ -2,6 +2,7 @@
 #include <sys/stat.h>
 #include <dlfcn.h>
 #import <UIKit/UIKit.h>
+#import "ZZSaferDefine.h"
 
 @implementation ZZSafer
 
@@ -62,7 +63,7 @@
     // 3.对比文件修改时间是否一致, 看看你的程序是不是被二进制编辑器修改过了
     NSString *bundlePath2 = [[NSBundle mainBundle] bundlePath];
     NSString *path = [NSString stringWithFormat:@"%@/Info.plist", bundlePath2];
-    NSString *path2 = [NSString stringWithFormat:@"%@/泰隆银行", bundlePath2];
+    NSString *path2 = [NSString stringWithFormat:@"%@/%@", bundlePath2, kSafeAppName];
     NSError *error = nil;
     NSDate *infoModifiedDate = [[[NSFileManager defaultManager] attributesOfItemAtPath:path error:&error] fileModificationDate];
     error = nil;
