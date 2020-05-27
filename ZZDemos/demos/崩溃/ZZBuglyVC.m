@@ -32,6 +32,16 @@
         NSArray *arr = @[@"1"];
         NSString *str = arr[1];
     }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"除数为0" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        int result = 35 / 0;
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"手动抛出" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+         @throw [NSException exceptionWithName:@"手动抛出异常" reason:@"random exception" userInfo:nil];
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"插入空值" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSMutableDictionary *dict = [NSMutableDictionary new];
+        [dict setObject:nil forKey:@"a"];
+    }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:alert animated:YES completion:nil];
 }
@@ -54,6 +64,7 @@
         _textView = textView;
         _textView.font = UIFontSize(14);
         _textView.textColor = UIColor.blackColor;
+        _textView.editable = NO;
     }
     return _textView;
 }

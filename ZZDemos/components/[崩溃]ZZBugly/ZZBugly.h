@@ -6,7 +6,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)setup;
 
-+ (NSString *)localSavingBugInfo;
++ (NSString *)localSavingCrashInfo;
 
 @end
 

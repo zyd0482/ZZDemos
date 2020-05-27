@@ -7,25 +7,25 @@ static const NSString *kBuglyLocalSavingName = @"com.zz.buginfo";
 
 void UncaughtExceptionHandler(NSException *exception) {
     NSMutableString *crashSymbols = [NSMutableString string];
-    [crashSymbols appendFormat:@"> name:\n%@\n", [exception name]];
-    [crashSymbols appendFormat:@"> reason:\n%@\n", [exception reason]];
-    [crashSymbols appendFormat:@"> callStackSymbols:\n%@\n", [exception callStackSymbols]];
-    [crashSymbols appendFormat:@"> userInfo:\n%@\n", [exception userInfo]];
-    [crashSymbols appendFormat:@"> callStackReturnAddresses:\n%@\n", [exception callStackReturnAddresses]];
+    [crashSymbols appendFormat:@">> name:\n%@\n", [exception name]];
+    [crashSymbols appendFormat:@">> reason:\n%@\n", [exception reason]];
+    [crashSymbols appendFormat:@">> callStackSymbols:\n%@\n", [exception callStackSymbols]];
+    [crashSymbols appendFormat:@">> userInfo:\n%@\n", [exception userInfo]];
+    [crashSymbols appendFormat:@">> callStackReturnAddresses:\n%@\n", [exception callStackReturnAddresses]];
     [ZZBugly saveCrashFileToLocalWithInfo:[crashSymbols copy]];
 }
 
 + (void)setup {
     NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
+    [self uploadCrashInfoToServer];
 }
 
-+ (NSString *)localSavingBugInfo {
++ (NSString *)localSavingCrashInfo {
     NSDictionary *dict = [self findLocalCrashFile];
     if (!dict) return @"";
     NSMutableString *res = [NSMutableString new];
     for (NSString *key in dict) {
-        [res appendFormat:@"key: %@\n", key];
-        [res appendFormat:@"value:\n %@ \n", dict[key]];
+        [res appendFormat:@"> %@\n%@\n", key, dict[key]];
     }
     return res;
 }
@@ -34,8 +34,13 @@ void UncaughtExceptionHandler(NSException *exception) {
     return [NSHomeDirectory() stringByAppendingPathComponent:@"Library/Caches/CrashLog"];
 }
 
-+ (void)uploadCrashInfoToServerWithDict:(NSDictionary *)crashInfo {
-    NSLog(@"%@", crashInfo);
++ (void)uploadCrashInfoToServer {
+    NSString *crashInfo = [self localSavingCrashInfo];
+    if ([crashInfo length]) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            // send request
+        });
+    }
 }
 
 + (void)saveCrashFileToLocalWithInfo:(NSString *)crashInfo {
