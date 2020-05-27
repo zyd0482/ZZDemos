@@ -1,44 +1,33 @@
 #import "ZZBugly.h"
+#include <execinfo.h>
 
-static const NSString *kBuglyLocalSavingName = @"buginfo";
+static const NSString *kBuglyLocalSavingName = @"com.zz.buginfo";
 
 @implementation ZZBugly
 
 void UncaughtExceptionHandler(NSException *exception) {
-    NSArray *callStackSymbols = [exception callStackSymbols];
-    NSArray *callStackReturnAddresses = [exception callStackReturnAddresses];
-    NSString *name = [exception name];
-    NSString *reason = [exception reason];
-    NSDictionary *userInfo = [exception userInfo];
-    
     NSMutableString *crashSymbols = [NSMutableString string];
-    [crashSymbols appendString:@"=====callStackSymbols=====\n"];
-    [crashSymbols appendFormat:@"%@\n", callStackSymbols];
-    [crashSymbols appendString:@"=====callStackReturnAddresses======\n"];
-    [crashSymbols appendFormat:@"%@\n", callStackReturnAddresses];
-    [crashSymbols appendString:@"=====name======\n"];
-    [crashSymbols appendFormat:@"%@\n", name];
-    [crashSymbols appendString:@"=====reason======\n"];
-    [crashSymbols appendFormat:@"%@\n", reason];
-    [crashSymbols appendString:@"=====userInfo======\n"];
-    [crashSymbols appendFormat:@"%@\n", userInfo];
-    
-    //    UIDevice *device = [UIDevice currentDevice];
-    //    [crashSymbols appendString:@"=====deviceInfo======\n"];
-    //    [crashSymbols appendFormat:@"%@,%@%@\n", device.model, device.systemName, device.systemVersion];
+    [crashSymbols appendFormat:@"> name:\n%@\n", [exception name]];
+    [crashSymbols appendFormat:@"> reason:\n%@\n", [exception reason]];
+    [crashSymbols appendFormat:@"> callStackSymbols:\n%@\n", [exception callStackSymbols]];
+    [crashSymbols appendFormat:@"> userInfo:\n%@\n", [exception userInfo]];
+    [crashSymbols appendFormat:@"> callStackReturnAddresses:\n%@\n", [exception callStackReturnAddresses]];
     [ZZBugly saveCrashFileToLocalWithInfo:[crashSymbols copy]];
 }
 
 + (void)setup {
     NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
-    
-    // check and upload
+}
+
++ (NSString *)localSavingBugInfo {
     NSDictionary *dict = [self findLocalCrashFile];
-    if (dict) {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            [ZZBugly uploadCrashInfoToServerWithDict:dict];
-        });
+    if (!dict) return @"";
+    NSMutableString *res = [NSMutableString new];
+    for (NSString *key in dict) {
+        [res appendFormat:@"key: %@\n", key];
+        [res appendFormat:@"value:\n %@ \n", dict[key]];
     }
+    return res;
 }
 
 + (NSString *)localFilePath {
@@ -53,9 +42,9 @@ void UncaughtExceptionHandler(NSException *exception) {
     UIDevice *device = [UIDevice currentDevice];
     NSString *deviceInfo = [NSString stringWithFormat:@"%@,%@%@", device.model, device.systemName, device.systemVersion];
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
-    dict[@"crashInfo"] = crashInfo;
-    dict[@"time"] = [NSDate.date stringWithFormat:@"yyyy-MM-dd HH:mm:ss"];
-    dict[@"sys"] = deviceInfo;
+    dict[@"Crash Time"] = [NSDate.date stringWithFormat:@"yyyy-MM-dd HH:mm:ss"];
+    dict[@"Device Info"] = deviceInfo;
+    dict[@"Crash Info"] = crashInfo;
     NSString *filePath = [self localFilePath];
     [dict writeToFile:filePath atomically:YES];
 }

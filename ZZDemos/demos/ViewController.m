@@ -2,6 +2,7 @@
 #import "TSBannerVC.h"
 #import "TSSharedVC.h"
 #import "ZZH5ContainerController.h"
+#import "ZZBuglyVC.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -15,7 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.datas = @[@"Banner轮播图", @"分享控件", @"WebController"];
+    self.datas = @[@"Banner轮播图", @"分享控件", @"WebController", @"崩溃检测"];
     
     self.tableView = [[UITableView alloc] init];
     [self.view addSubview:self.tableView];
@@ -54,6 +55,9 @@
         case 2:
             vc = [[ZZH5ContainerController alloc] init];
             [((ZZH5ContainerController *)vc) setUrlString:@"http://10.4.17.185/tlboxer/yw/ProjectTL/html/ybt/index.html"];
+            break;
+        case 3:
+            vc = [[ZZBuglyVC alloc] init];
             break;
         default:
             break;
