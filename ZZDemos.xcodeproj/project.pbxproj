@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B2264E4B247DEF5100EDE558 /* ZZBuglyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2264E4A247DEF5100EDE558 /* ZZBuglyVC.m */; };
+		B2264E4F247E3C2900EDE558 /* ZZDevicePermissionChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = B2264E4E247E3C2900EDE558 /* ZZDevicePermissionChecker.m */; };
+		B2264E59247E42A500EDE558 /* NSString+ZZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B2264E58247E42A500EDE558 /* NSString+ZZExt.m */; };
+		B2264E5E247E439D00EDE558 /* UIImage+ZZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B2264E5D247E439D00EDE558 /* UIImage+ZZExt.m */; };
+		B2264E60247E4D2100EDE558 /* ZZDevicePermisionReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = B2264E5F247E4D2100EDE558 /* ZZDevicePermisionReadMe.md */; };
+		B2CB5AB824879FDF00F802EC /* ZZOberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CB5AB724879FDF00F802EC /* ZZOberVC.m */; };
+		B2CB5ABB2487AAB600F802EC /* NSObject+SJObserverHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CB5ABA2487AAB600F802EC /* NSObject+SJObserverHelper.m */; };
 		B2D910BC247BA21B00820F21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910BB247BA21B00820F21 /* AppDelegate.m */; };
 		B2D910C2247BA21B00820F21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D910C1247BA21B00820F21 /* ViewController.m */; };
 		B2D910C7247BA22100820F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D910C6247BA22100820F21 /* Assets.xcassets */; };
@@ -47,6 +53,18 @@
 		B2264E36247CCA7800EDE558 /* ZZSaferDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZSaferDefine.h; sourceTree = "<group>"; };
 		B2264E49247DEF5100EDE558 /* ZZBuglyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZBuglyVC.h; sourceTree = "<group>"; };
 		B2264E4A247DEF5100EDE558 /* ZZBuglyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZBuglyVC.m; sourceTree = "<group>"; };
+		B2264E4D247E3C2900EDE558 /* ZZDevicePermissionChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZDevicePermissionChecker.h; sourceTree = "<group>"; };
+		B2264E4E247E3C2900EDE558 /* ZZDevicePermissionChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZDevicePermissionChecker.m; sourceTree = "<group>"; };
+		B2264E57247E42A500EDE558 /* NSString+ZZExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZZExt.h"; sourceTree = "<group>"; };
+		B2264E58247E42A500EDE558 /* NSString+ZZExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZZExt.m"; sourceTree = "<group>"; };
+		B2264E5A247E42E700EDE558 /* ZZMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZZMacros.h; path = "ZZDemos/components/[分类]ZZExtensions/ZZMacros.h"; sourceTree = SOURCE_ROOT; };
+		B2264E5C247E439D00EDE558 /* UIImage+ZZExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZZExt.h"; sourceTree = "<group>"; };
+		B2264E5D247E439D00EDE558 /* UIImage+ZZExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZZExt.m"; sourceTree = "<group>"; };
+		B2264E5F247E4D2100EDE558 /* ZZDevicePermisionReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ZZDevicePermisionReadMe.md; sourceTree = "<group>"; };
+		B2CB5AB624879FDF00F802EC /* ZZOberVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZOberVC.h; sourceTree = "<group>"; };
+		B2CB5AB724879FDF00F802EC /* ZZOberVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZOberVC.m; sourceTree = "<group>"; };
+		B2CB5AB92487AAB600F802EC /* NSObject+SJObserverHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SJObserverHelper.h"; sourceTree = "<group>"; };
+		B2CB5ABA2487AAB600F802EC /* NSObject+SJObserverHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SJObserverHelper.m"; sourceTree = "<group>"; };
 		B2D910B7247BA21B00820F21 /* ZZDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D910BA247BA21B00820F21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2D910BB247BA21B00820F21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,6 +146,52 @@
 			path = "崩溃";
 			sourceTree = "<group>";
 		};
+		B2264E4C247E3BF200EDE558 /* [权限检查]ZZDevicePermissionChecker */ = {
+			isa = PBXGroup;
+			children = (
+				B2264E5F247E4D2100EDE558 /* ZZDevicePermisionReadMe.md */,
+				B2264E4D247E3C2900EDE558 /* ZZDevicePermissionChecker.h */,
+				B2264E4E247E3C2900EDE558 /* ZZDevicePermissionChecker.m */,
+			);
+			path = "[权限检查]ZZDevicePermissionChecker";
+			sourceTree = "<group>";
+		};
+		B2264E56247E429200EDE558 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				B2264E57247E42A500EDE558 /* NSString+ZZExt.h */,
+				B2264E58247E42A500EDE558 /* NSString+ZZExt.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		B2264E5B247E438600EDE558 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				B2264E5C247E439D00EDE558 /* UIImage+ZZExt.h */,
+				B2264E5D247E439D00EDE558 /* UIImage+ZZExt.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		B2CB5AB124879F6300F802EC /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB5AB92487AAB600F802EC /* NSObject+SJObserverHelper.h */,
+				B2CB5ABA2487AAB600F802EC /* NSObject+SJObserverHelper.m */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		B2CB5AB524879FC600F802EC /* 观察者 */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB5AB624879FDF00F802EC /* ZZOberVC.h */,
+				B2CB5AB724879FDF00F802EC /* ZZOberVC.m */,
+			);
+			path = "观察者";
+			sourceTree = "<group>";
+		};
 		B2D910AE247BA21B00820F21 = {
 			isa = PBXGroup;
 			children = (
@@ -149,8 +213,8 @@
 		B2D910B9247BA21B00820F21 /* ZZDemos */ = {
 			isa = PBXGroup;
 			children = (
-				B2D910D3247BA24800820F21 /* demos */,
-				B2D910DC247BA24800820F21 /* components */,
+				B2D910D3247BA24800820F21 /* Demos */,
+				B2D910DC247BA24800820F21 /* Components */,
 				B2D910BA247BA21B00820F21 /* AppDelegate.h */,
 				B2D910BB247BA21B00820F21 /* AppDelegate.m */,
 				B2D910C6247BA22100820F21 /* Assets.xcassets */,
@@ -162,17 +226,18 @@
 			path = ZZDemos;
 			sourceTree = "<group>";
 		};
-		B2D910D3247BA24800820F21 /* demos */ = {
+		B2D910D3247BA24800820F21 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				B2D910C0247BA21B00820F21 /* ViewController.h */,
-				B2D910C1247BA21B00820F21 /* ViewController.m */,
+				B2CB5AB524879FC600F802EC /* 观察者 */,
 				B2264E48247DEF3100EDE558 /* 崩溃 */,
 				B2D910D4247BA24800820F21 /* 网络 */,
 				B2D910D6247BA24800820F21 /* 轮播图 */,
 				B2D910D9247BA24800820F21 /* 分享 */,
+				B2D910C0247BA21B00820F21 /* ViewController.h */,
+				B2D910C1247BA21B00820F21 /* ViewController.m */,
 			);
-			path = demos;
+			path = Demos;
 			sourceTree = "<group>";
 		};
 		B2D910D4247BA24800820F21 /* 网络 */ = {
@@ -201,9 +266,10 @@
 			path = "分享";
 			sourceTree = "<group>";
 		};
-		B2D910DC247BA24800820F21 /* components */ = {
+		B2D910DC247BA24800820F21 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B2264E4C247E3BF200EDE558 /* [权限检查]ZZDevicePermissionChecker */,
 				B2D910DD247BA24800820F21 /* [分类]ZZExtensions */,
 				B2D910E2247BA24800820F21 /* [分享]ZZShared */,
 				B2D910EB247BA24800820F21 /* [轮播图]ZZBannerView */,
@@ -213,13 +279,17 @@
 				B2D910FE247BA24800820F21 /* [启动安全]ZZSafer */,
 				B2D91101247BA24800820F21 /* [指纹]ZZTouchIDAuthenticator */,
 			);
-			path = components;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		B2D910DD247BA24800820F21 /* [分类]ZZExtensions */ = {
 			isa = PBXGroup;
 			children = (
 				B2D910DE247BA24800820F21 /* ZZExtensions.h */,
+				B2264E5A247E42E700EDE558 /* ZZMacros.h */,
+				B2CB5AB124879F6300F802EC /* Observer */,
+				B2264E5B247E438600EDE558 /* UIImage */,
+				B2264E56247E429200EDE558 /* NSString */,
 				B2D91123247BB50A00820F21 /* UIAlertController */,
 				B2D9112C247BB50B00820F21 /* NSAttributedString */,
 				B2D91135247BB50B00820F21 /* UIColor */,
@@ -488,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2D91104247BA24800820F21 /* test.html in Resources */,
+				B2264E60247E4D2100EDE558 /* ZZDevicePermisionReadMe.md in Resources */,
 				B2D910CA247BA22100820F21 /* LaunchScreen.storyboard in Resources */,
 				B2D9110A247BA24800820F21 /* ZZSharedResource.bundle in Resources */,
 				B2D910C7247BA22100820F21 /* Assets.xcassets in Resources */,
@@ -528,7 +599,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2D910C2247BA21B00820F21 /* ViewController.m in Sources */,
+				B2CB5AB824879FDF00F802EC /* ZZOberVC.m in Sources */,
+				B2264E4F247E3C2900EDE558 /* ZZDevicePermissionChecker.m in Sources */,
 				B2D9110F247BA24800820F21 /* ZZH5ContainerController.m in Sources */,
+				B2CB5ABB2487AAB600F802EC /* NSObject+SJObserverHelper.m in Sources */,
 				B2D910BC247BA21B00820F21 /* AppDelegate.m in Sources */,
 				B2D91155247BB69F00820F21 /* UIView+ZZExt.m in Sources */,
 				B2D91108247BA24800820F21 /* ZZSharedManager.m in Sources */,
@@ -544,6 +618,8 @@
 				B2D91158247BB6C900820F21 /* UIViewController+ZZExt.m in Sources */,
 				B2D91110247BA24800820F21 /* ZZH5BaseScriptHandler.m in Sources */,
 				B2D91112247BA24800820F21 /* ZZSafer.m in Sources */,
+				B2264E5E247E439D00EDE558 /* UIImage+ZZExt.m in Sources */,
+				B2264E59247E42A500EDE558 /* NSString+ZZExt.m in Sources */,
 				B2D9114F247BB59C00820F21 /* UIColor+ZZExt.m in Sources */,
 				B2D91145247BB50B00820F21 /* UIView+ZZCreate.m in Sources */,
 				B2D91105247BA24800820F21 /* TSBannerVC.m in Sources */,

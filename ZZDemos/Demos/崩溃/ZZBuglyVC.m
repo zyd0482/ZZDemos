@@ -15,7 +15,7 @@
     [super viewDidLoad];
     self.title = @"bugly";
     [ZZBugly setup];
-    self.textView.text = [ZZBugly localSavingBugInfo];
+    self.textView.text = [ZZBugly localSavingCrashInfo];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -32,15 +32,22 @@
         NSArray *arr = @[@"1"];
         NSString *str = arr[1];
     }]];
-    [alert addAction:[UIAlertAction actionWithTitle:@"除数为0" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        int result = 35 / 0;
-    }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"手动抛出" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
          @throw [NSException exceptionWithName:@"手动抛出异常" reason:@"random exception" userInfo:nil];
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"插入空值" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         NSMutableDictionary *dict = [NSMutableDictionary new];
         [dict setObject:nil forKey:@"a"];
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"多线程处理UI" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            UIView *tmpView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+            tmpView.backgroundColor = UIColor.redColor;
+            [self.view addSubview:tmpView];
+        });
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"调用不存在的方法" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self performSelector:@selector(unfindSelector)];
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:alert animated:YES completion:nil];
