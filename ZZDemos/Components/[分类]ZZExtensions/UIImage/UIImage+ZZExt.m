@@ -23,4 +23,13 @@
     return [self resizableImageWithCapInsets:UIEdgeInsetsMake(vertical, horizontal, vertical, horizontal) resizingMode:UIImageResizingModeStretch];
 }
 
+
++ (instancetype)t_imageInMainBundleWithName:(NSString *)imageName {
+    if (![imageName length]) return nil;
+    NSString *path = [NSBundle.mainBundle pathForResource:imageName ofType:nil];
+    if (![path length]) return nil;
+    return [UIImage imageWithContentsOfFile:path];
+}
+
+
 @end

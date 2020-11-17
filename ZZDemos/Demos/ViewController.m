@@ -1,5 +1,6 @@
 #import "ViewController.h"
 #import "ZZH5ContainerController.h"
+#import "TLBGuidingVC.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -13,7 +14,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.datas = @[@"Banner轮播图", @"分享控件", @"WebController", @"崩溃检测", @"自动释放观察者"];
+    self.title = @"Demos";
+//    self.datas = @[@"Banner轮播图", @"分享控件", @"WebController", @"崩溃检测", @"自动释放观察者", @"引导图"];
+    self.datas = @[@"引导页"];
     
     self.tableView = [[UITableView alloc] init];
     [self.view addSubview:self.tableView];
@@ -41,28 +44,31 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSString *name = self.datas[indexPath.row];
     UIViewController *vc = nil;
     NSString *className = @"";
-    switch (indexPath.row) {
-        case 0:
-            className = @"TSBannerVC";
-            break;
-        case 1:
-            className = @"TSSharedVC";
-            break;
-        case 2:
-            vc = [[ZZH5ContainerController alloc] init];
-            [((ZZH5ContainerController *)vc) setUrlString:@"http://10.4.17.185/tlboxer/yw/ProjectTL/html/ybt/index.html"];
-            break;
-        case 3:
-            className = @"ZZBuglyVC";
-            break;
-        case 4:
-            className = @"ZZOberVC";
-            break;
-        default:
-            break;
+    if ([name isEqualToString:@"Banner轮播图"]) {
+        className = @"TSBannerVC";
     }
+    else if ([name isEqualToString:@"分享控件"]) {
+        className = @"TSSharedVC";
+    }
+    else if ([name isEqualToString:@"WebController"]) {
+        vc = [[ZZH5ContainerController alloc] init];
+        [((ZZH5ContainerController *)vc) setUrlString:@"http://10.4.17.185/tlboxer/yw/ProjectTL/html/ybt/index.html"];
+    }
+    else if ([name isEqualToString:@"崩溃检测"]) {
+        className = @"ZZBuglyVC";
+    }
+    else if ([name isEqualToString:@"自动释放观察者"]) {
+        className = @"ZZOberVC";
+    }
+    else if ([name isEqualToString:@"引导页"]) {
+        [self openGuiding];
+        return;
+    }
+
     if (vc) {
         [self.navigationController pushViewController:vc animated:YES];
         return;
@@ -72,6 +78,12 @@
         [self.navigationController pushViewController:classVC animated:YES];
         return;
     }
+}
+
+- (void)openGuiding {
+    [TLBGuidingVC openGuidingFrom:self complete:^(BOOL isClickCompleteButton) {
+        [UIAlertController showAlertWithMessage:isClickCompleteButton ? @"点击了立即体验" : @"点击了跳过"];
+    }];
 }
 
 

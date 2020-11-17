@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C052E0D25639BDE00D088C4 /* TLBGuidingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C052E0C25639BDE00D088C4 /* TLBGuidingVC.m */; };
+		4C052E272563AD9500D088C4 /* 引导_文字_副_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E1A2563AD9400D088C4 /* 引导_文字_副_0.png */; };
+		4C052E292563AD9500D088C4 /* 引导_浮动图_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E1C2563AD9400D088C4 /* 引导_浮动图_3.png */; };
+		4C052E2A2563AD9500D088C4 /* 引导_文字_副_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E1D2563AD9400D088C4 /* 引导_文字_副_3.png */; };
+		4C052E2B2563AD9500D088C4 /* 引导_浮动图_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E1E2563AD9400D088C4 /* 引导_浮动图_1.png */; };
+		4C052E2C2563AD9500D088C4 /* 引导_文字_主_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E1F2563AD9400D088C4 /* 引导_文字_主_3.png */; };
+		4C052E2D2563AD9500D088C4 /* 引导_文字_主_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E202563AD9400D088C4 /* 引导_文字_主_1.png */; };
+		4C052E2E2563AD9500D088C4 /* 引导_背景元素_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E212563AD9400D088C4 /* 引导_背景元素_0.png */; };
+		4C052E312563AD9500D088C4 /* 引导_浮动图_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E242563AD9400D088C4 /* 引导_浮动图_0.png */; };
+		4C052E322563AD9500D088C4 /* 引导_文字_主_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E252563AD9400D088C4 /* 引导_文字_主_0.png */; };
+		4C052E332563AD9500D088C4 /* 引导_文字_副_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E262563AD9500D088C4 /* 引导_文字_副_1.png */; };
+		4C052E362563CB7600D088C4 /* 引导_文字_副_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E352563CB7600D088C4 /* 引导_文字_副_2.png */; };
+		4C052E382563CB8700D088C4 /* 引导_文字_主_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E372563CB8700D088C4 /* 引导_文字_主_2.png */; };
+		4C052E3A2563CB9E00D088C4 /* 引导_背景元素_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E392563CB9E00D088C4 /* 引导_背景元素_1.png */; };
+		4C052E3D2563CCF700D088C4 /* 引导_背景元素_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E3B2563CCF600D088C4 /* 引导_背景元素_3.png */; };
+		4C052E3E2563CCF700D088C4 /* 引导_背景元素_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E3C2563CCF600D088C4 /* 引导_背景元素_2.png */; };
+		4C052E402563CE7800D088C4 /* 引导_浮动图_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C052E3F2563CE7800D088C4 /* 引导_浮动图_2.png */; };
+		B2023A3E24E3976F00D80CDC /* NSArray+ZZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B2023A3D24E3976F00D80CDC /* NSArray+ZZExt.m */; };
 		B2264E4B247DEF5100EDE558 /* ZZBuglyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2264E4A247DEF5100EDE558 /* ZZBuglyVC.m */; };
 		B2264E4F247E3C2900EDE558 /* ZZDevicePermissionChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = B2264E4E247E3C2900EDE558 /* ZZDevicePermissionChecker.m */; };
 		B2264E59247E42A500EDE558 /* NSString+ZZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B2264E58247E42A500EDE558 /* NSString+ZZExt.m */; };
@@ -49,7 +67,27 @@
 /* Begin PBXFileReference section */
 		100F87D4BA26A8F61B0415FC /* Pods-ZZDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZDemos.release.xcconfig"; path = "Target Support Files/Pods-ZZDemos/Pods-ZZDemos.release.xcconfig"; sourceTree = "<group>"; };
 		3E03CD6189A9C05BE9B81A8A /* Pods-ZZDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZDemos.debug.xcconfig"; path = "Target Support Files/Pods-ZZDemos/Pods-ZZDemos.debug.xcconfig"; sourceTree = "<group>"; };
+		4C052E0B25639BDE00D088C4 /* TLBGuidingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLBGuidingVC.h; sourceTree = "<group>"; };
+		4C052E0C25639BDE00D088C4 /* TLBGuidingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLBGuidingVC.m; sourceTree = "<group>"; };
+		4C052E1A2563AD9400D088C4 /* 引导_文字_副_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_文字_副_0.png"; sourceTree = "<group>"; };
+		4C052E1C2563AD9400D088C4 /* 引导_浮动图_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_浮动图_3.png"; sourceTree = "<group>"; };
+		4C052E1D2563AD9400D088C4 /* 引导_文字_副_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_文字_副_3.png"; sourceTree = "<group>"; };
+		4C052E1E2563AD9400D088C4 /* 引导_浮动图_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_浮动图_1.png"; sourceTree = "<group>"; };
+		4C052E1F2563AD9400D088C4 /* 引导_文字_主_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_文字_主_3.png"; sourceTree = "<group>"; };
+		4C052E202563AD9400D088C4 /* 引导_文字_主_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_文字_主_1.png"; sourceTree = "<group>"; };
+		4C052E212563AD9400D088C4 /* 引导_背景元素_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_背景元素_0.png"; sourceTree = "<group>"; };
+		4C052E242563AD9400D088C4 /* 引导_浮动图_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_浮动图_0.png"; sourceTree = "<group>"; };
+		4C052E252563AD9400D088C4 /* 引导_文字_主_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_文字_主_0.png"; sourceTree = "<group>"; };
+		4C052E262563AD9500D088C4 /* 引导_文字_副_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_文字_副_1.png"; sourceTree = "<group>"; };
+		4C052E352563CB7600D088C4 /* 引导_文字_副_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_文字_副_2.png"; sourceTree = "<group>"; };
+		4C052E372563CB8700D088C4 /* 引导_文字_主_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_文字_主_2.png"; sourceTree = "<group>"; };
+		4C052E392563CB9E00D088C4 /* 引导_背景元素_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_背景元素_1.png"; sourceTree = "<group>"; };
+		4C052E3B2563CCF600D088C4 /* 引导_背景元素_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_背景元素_3.png"; sourceTree = "<group>"; };
+		4C052E3C2563CCF600D088C4 /* 引导_背景元素_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导_背景元素_2.png"; sourceTree = "<group>"; };
+		4C052E3F2563CE7800D088C4 /* 引导_浮动图_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "引导_浮动图_2.png"; path = "../../../../../../Downloads/引导页理财 2/内容/引导_浮动图_2.png"; sourceTree = "<group>"; };
 		9C36F78A67EA3F65EF9227A7 /* libPods-ZZDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2023A3C24E3976F00D80CDC /* NSArray+ZZExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZZExt.h"; sourceTree = "<group>"; };
+		B2023A3D24E3976F00D80CDC /* NSArray+ZZExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZZExt.m"; sourceTree = "<group>"; };
 		B2264E36247CCA7800EDE558 /* ZZSaferDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZSaferDefine.h; sourceTree = "<group>"; };
 		B2264E49247DEF5100EDE558 /* ZZBuglyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZBuglyVC.h; sourceTree = "<group>"; };
 		B2264E4A247DEF5100EDE558 /* ZZBuglyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZBuglyVC.m; sourceTree = "<group>"; };
@@ -137,6 +175,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C052E0625639B9B00D088C4 /* [启动页]TLBGuiding */ = {
+			isa = PBXGroup;
+			children = (
+				4C052E0725639BAF00D088C4 /* 图片集 */,
+				4C052E0B25639BDE00D088C4 /* TLBGuidingVC.h */,
+				4C052E0C25639BDE00D088C4 /* TLBGuidingVC.m */,
+			);
+			path = "[启动页]TLBGuiding";
+			sourceTree = "<group>";
+		};
+		4C052E0725639BAF00D088C4 /* 图片集 */ = {
+			isa = PBXGroup;
+			children = (
+				4C052E212563AD9400D088C4 /* 引导_背景元素_0.png */,
+				4C052E392563CB9E00D088C4 /* 引导_背景元素_1.png */,
+				4C052E3C2563CCF600D088C4 /* 引导_背景元素_2.png */,
+				4C052E3B2563CCF600D088C4 /* 引导_背景元素_3.png */,
+				4C052E242563AD9400D088C4 /* 引导_浮动图_0.png */,
+				4C052E1E2563AD9400D088C4 /* 引导_浮动图_1.png */,
+				4C052E3F2563CE7800D088C4 /* 引导_浮动图_2.png */,
+				4C052E1C2563AD9400D088C4 /* 引导_浮动图_3.png */,
+				4C052E1A2563AD9400D088C4 /* 引导_文字_副_0.png */,
+				4C052E262563AD9500D088C4 /* 引导_文字_副_1.png */,
+				4C052E352563CB7600D088C4 /* 引导_文字_副_2.png */,
+				4C052E1D2563AD9400D088C4 /* 引导_文字_副_3.png */,
+				4C052E252563AD9400D088C4 /* 引导_文字_主_0.png */,
+				4C052E202563AD9400D088C4 /* 引导_文字_主_1.png */,
+				4C052E372563CB8700D088C4 /* 引导_文字_主_2.png */,
+				4C052E1F2563AD9400D088C4 /* 引导_文字_主_3.png */,
+			);
+			path = "图片集";
+			sourceTree = "<group>";
+		};
+		B2023A3B24E3974E00D80CDC /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				B2023A3C24E3976F00D80CDC /* NSArray+ZZExt.h */,
+				B2023A3D24E3976F00D80CDC /* NSArray+ZZExt.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
 		B2264E48247DEF3100EDE558 /* 崩溃 */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +349,7 @@
 		B2D910DC247BA24800820F21 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4C052E0625639B9B00D088C4 /* [启动页]TLBGuiding */,
 				B2264E4C247E3BF200EDE558 /* [权限检查]ZZDevicePermissionChecker */,
 				B2D910DD247BA24800820F21 /* [分类]ZZExtensions */,
 				B2D910E2247BA24800820F21 /* [分享]ZZShared */,
@@ -285,6 +366,7 @@
 		B2D910DD247BA24800820F21 /* [分类]ZZExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				B2023A3B24E3974E00D80CDC /* NSArray */,
 				B2D910DE247BA24800820F21 /* ZZExtensions.h */,
 				B2264E5A247E42E700EDE558 /* ZZMacros.h */,
 				B2CB5AB124879F6300F802EC /* Observer */,
@@ -557,11 +639,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C052E3D2563CCF700D088C4 /* 引导_背景元素_3.png in Resources */,
+				4C052E292563AD9500D088C4 /* 引导_浮动图_3.png in Resources */,
 				B2D91104247BA24800820F21 /* test.html in Resources */,
+				4C052E2A2563AD9500D088C4 /* 引导_文字_副_3.png in Resources */,
+				4C052E382563CB8700D088C4 /* 引导_文字_主_2.png in Resources */,
+				4C052E2B2563AD9500D088C4 /* 引导_浮动图_1.png in Resources */,
 				B2264E60247E4D2100EDE558 /* ZZDevicePermisionReadMe.md in Resources */,
+				4C052E332563AD9500D088C4 /* 引导_文字_副_1.png in Resources */,
+				4C052E362563CB7600D088C4 /* 引导_文字_副_2.png in Resources */,
+				4C052E2E2563AD9500D088C4 /* 引导_背景元素_0.png in Resources */,
+				4C052E2C2563AD9500D088C4 /* 引导_文字_主_3.png in Resources */,
+				4C052E3A2563CB9E00D088C4 /* 引导_背景元素_1.png in Resources */,
 				B2D910CA247BA22100820F21 /* LaunchScreen.storyboard in Resources */,
+				4C052E2D2563AD9500D088C4 /* 引导_文字_主_1.png in Resources */,
+				4C052E312563AD9500D088C4 /* 引导_浮动图_0.png in Resources */,
+				4C052E272563AD9500D088C4 /* 引导_文字_副_0.png in Resources */,
+				4C052E3E2563CCF700D088C4 /* 引导_背景元素_2.png in Resources */,
 				B2D9110A247BA24800820F21 /* ZZSharedResource.bundle in Resources */,
+				4C052E322563AD9500D088C4 /* 引导_文字_主_0.png in Resources */,
 				B2D910C7247BA22100820F21 /* Assets.xcassets in Resources */,
+				4C052E402563CE7800D088C4 /* 引导_浮动图_2.png in Resources */,
 				B2D91109247BA24800820F21 /* ZZShareReadme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,7 +707,9 @@
 				B2D91149247BB53B00820F21 /* UIAlertController+ZZExt.m in Sources */,
 				B2D91106247BA24800820F21 /* TSSharedVC.m in Sources */,
 				B2D9114C247BB56D00820F21 /* NSAttributedString+ZZExt.m in Sources */,
+				4C052E0D25639BDE00D088C4 /* TLBGuidingVC.m in Sources */,
 				B2264E4B247DEF5100EDE558 /* ZZBuglyVC.m in Sources */,
+				B2023A3E24E3976F00D80CDC /* NSArray+ZZExt.m in Sources */,
 				B2D910CD247BA22100820F21 /* main.m in Sources */,
 				B2D9113F247BB50B00820F21 /* UIView+ZZFrame.m in Sources */,
 				B2D91152247BB65100820F21 /* UITextField+ZZExt.m in Sources */,
@@ -770,7 +870,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.z.ZZDemos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjtlcb.TaiLongMobileBankCC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -791,7 +891,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.z.ZZDemos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjtlcb.TaiLongMobileBankCC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

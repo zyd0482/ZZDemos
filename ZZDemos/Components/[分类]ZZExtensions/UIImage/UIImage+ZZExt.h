@@ -10,6 +10,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 从图片中心拉伸
 - (UIImage *)stretchCenterImage;
 
++ (instancetype)t_imageInMainBundleWithName:(NSString *)imageName;
+
 @end
 
 NS_ASSUME_NONNULL_END
